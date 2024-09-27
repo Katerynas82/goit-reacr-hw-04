@@ -19,8 +19,11 @@ const ImageModal = ({imageModal, setImageModal, largeImageUrl}) => {
           shouldCloseOnEsc={true}
         >
           <div className={style.overlayModal}>
-            {largeImageUrl && <img src={largeImageUrl} alt="Large view" />}
-            <button onClick={closeModal}>close</button>
+            
+            {largeImageUrl && (
+              <img  src={largeImageUrl} alt="Large view" />
+            )}
+            
           </div>
         </Modal>
       </div>
